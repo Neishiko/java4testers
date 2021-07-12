@@ -1,5 +1,10 @@
 public class Test{
 	public static void main(String[] args){
-		System.out.println("Hello, master");
+		doSmthng("username");
+		doSmthng("user");
+		doSmthng("name");
+	}
+	public static void doSmthng(String smthng){
+		System.out.println("Hello," + " " + smthng + "!");
 	}
 }
