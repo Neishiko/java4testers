@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 
-public class GrupCreateTest {
+public class GroupCreationTest {
   private WebDriver wd;
 
   @BeforeMethod(alwaysRun = true)
