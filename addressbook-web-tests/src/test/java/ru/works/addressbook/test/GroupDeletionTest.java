@@ -1,4 +1,4 @@
-package ru.works.addressbook;
+package ru.works.addressbook.test;
 
 import org.testng.annotations.Test;
 
@@ -6,10 +6,10 @@ public class GroupDeletionTest extends TestBase{
 
 	@Test
 	public void testGroupDeletion() throws Exception {
-		goToGroupPage();
-		selectGroup();
-		deleteSelectedGroup();
-		returnToGroupPage();
+		app.goToGroupPage();
+		app.selectGroup();
+		app.deleteSelectedGroup();
+		app.returnToGroupPage();
 	}
 
 }
