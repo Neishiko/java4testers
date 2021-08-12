@@ -1,4 +1,4 @@
-package ru.works.addressbook.test;
+package ru.works.addressbook.tests;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
