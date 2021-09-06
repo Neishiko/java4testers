@@ -20,6 +20,10 @@ public class ContactHelper extends HelperBase{
 		type(By.name("email"),contactData.getEmail());
 	}
 
+	public void submitContactreation() {
+		click(By.name("submit"));
+	}
+
 	public void selectContact() {
 		click(By.name("selected[]"));
 	}
@@ -38,5 +42,15 @@ public class ContactHelper extends HelperBase{
 
 	public void confirmContactDeleting(){
 		wd.switchTo().alert().accept();
+	}
+
+	public void createContact(ContactData contact){
+		initContactCreation();
+		fillContactForm(contact);
+		submitContactreation();
+	}
+
+	public boolean isThereAContact() {
+		return !isElementPresent(By.name("selected[]"));
 	}
 }
